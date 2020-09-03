@@ -1,0 +1,50 @@
+<!--HTML file for to-do list project-->
+<!--Developed by Rakshan A Jain, Vaidik S Prabhu and Suraj Pai K-->
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <!-- Encoding mechanism-->
+    <meta charset="UTF-8">
+    <!---To fit the web page according to the device size-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Link of the google font to insert font-->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" rel="stylesheet">
+    <!--Link of the font-awesome to insert icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <!--Link of the css file-->
+    <link rel="stylesheet" href="./style.css">
+    <title>TODOList</title>
+</head>
+
+<body>
+    <header>
+        <img src="logo.jpg" alt="logo"width="90" height="90">
+        <h2 style="color:#0dc40d">TODO</h2><h2 style="color:whitesmoke">List</h2></header>
+    </header>
+    <p style="text-align: center;font-size:38px;background-color:red;color:white;">Hello User!</p>
+    <form>
+        <input type="text" title="Enter a to-do and press enter or plus icon"class="todo-input" placeholder="Add a to-do..."/>
+        <button class="todo-button" type="submit">
+            <i class="fas fa-plus-square"></i>
+        </button>
+        <!-- div is the section in the document styled with css -->
+        <div class="select">
+            <select name="todos" class="filter-todo">
+                <option value="all">All</option>
+                <option value="completed">Completed</option>
+                <option value="uncompleted">Incomplete</option>
+            </select>
+        </div>
+    </form>
+    
+    <div class="todo-container">
+        <ul class="todo-list"></ul>
+    </div>
+    
+    <!--Link of the java script file-->
+    <script src="./java.js"></script>
+</body>
+</html>

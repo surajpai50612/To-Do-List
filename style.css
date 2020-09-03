@@ -1,0 +1,180 @@
+/*CSS file for to-do list project*/
+/*--Developed by Rakshan A Jain, Vaidik S Prabhu and Suraj Pai K*/
+
+
+/*Removing all the pre-defined styles*/
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background-color:rgba(0, 0, 0, 0.767);
+    color:white;
+    font-family: "Poppins",sans-serif;
+    min-height: 100vh; /*vh: viewport height*/
+}
+
+/*image curvature*/
+img{
+    border-radius: 50%;
+    margin-right: 1.5%;
+}
+
+header{
+    font-size:2.5rem; /*rem: root em*/
+}
+
+header,form{
+    min-height:15vh;
+    display:flex; /*for the flexibility of the content*/
+    justify-content: center;
+    align-items: center;
+}
+
+form input, form button{
+    padding: 0rem;
+    font-size:2.5rem;
+    border:none;
+    border-radius:15px 0px 0px 15px;
+    background:white;
+}
+
+form button{
+    color:rgb(65, 32, 211);
+    border-radius:0px 15px 15px 0px;
+    background:white;
+    cursor: pointer; /*to make the cursor as point when it apeears over button*/
+    transition: all 0.3s ease; /*upon hover on the button, it takes 0.3 sec to change to the hovered color*/
+}
+
+form button:hover{
+    background:rgb(65, 32, 211);
+    color:white;
+}
+
+/*unordered list elements*/
+.todo-container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo-list{
+    min-width:30%;
+    list-style:none;
+}
+
+/*styling for js element*/
+.todo{
+    margin:0.5rem;
+    background:white;
+    color:black;
+    font-size:1.5rem;
+    display:flex;
+    justify-content: space-between; /*to add space between text, check and trash icon*/
+    align-items: center;
+    transition: all 0.5s ease;
+    border-radius:20px 0px 0px 20px;
+}
+
+.todo li{
+    flex:1; /*to set flexible length on flexible items*/
+}
+
+.trash-btn, .complete-btn{
+    background:#ff6f47;
+    color:white;
+    border:none;
+    padding:0.8rem;
+    cursor: pointer;
+}
+
+.complete-btn{
+    background:rgb(31, 223, 31);
+}
+
+.complete-btn:hover{
+    background:white;
+    color:rgb(31, 223, 31)
+}
+
+.trash-btn:hover{
+    background:white;
+    color:#ff6f47;
+}
+
+/*for styling contents within to-do list*/
+.todo-item{
+    padding:0rem 0.5rem;
+}
+
+.fa-check, .fa-trash{
+    pointer-events: none;
+}
+
+.completed{
+    text-decoration:line-through; /*to add strike mark to the text of the task completed*/
+    opacity:0.5; /*opacity upon completion of task*/
+}
+
+/*style fall of todo items upon clicking delete*/
+.fall{
+    transform:translateY(8rem) rotateZ(20deg);
+    opacity : 0;
+}
+
+/*for select option in side bar*/
+select{
+    -webkit-appearance:none ;
+    -moz-appearance: none;
+    appearance: none;
+    outline:none;
+    border:none;
+}
+
+
+.select {
+    margin: 1rem;
+    position: relative;
+    overflow: hidden; /*remove the overflow of the side menu*/
+}
+
+select {
+    color:#201cf0;
+    width:10rem;
+    cursor:pointer;
+    padding:0.9rem;
+    transition:all 0.3s ease; /*upon hover on the button, it takes 0.3 sec to change to the hovered color*/
+}
+
+/*designing menu icon in side bar ALL*/
+.select::after{
+    content:"\25BC"; /*to show the arrow downwards icon ( \25BC is the code of the icon ) */
+    position:absolute; /*icon will be absolutely to the right of ALL menu*/
+    background:#201cf0;
+    top:0;
+    right:0;
+    padding:0.7rem;
+    pointer-events: none;
+}
+
+/*menu button in side bar ALL upon hover*/
+.select:hover::after{
+    background:white;
+    color:#201cf0;
+}
+
+
+
+
+    
+
+
+
+
+
+
+
+
