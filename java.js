@@ -1,5 +1,5 @@
 //JS file for to-do list project
-//Developed by Rakshan A Jain, Vaidik S Prabhu and Suraj Pai K
+//Developed by Suraj Pai K
 
 
 //selectors
